@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-image: linear-gradient(to top, rgb(255, 192, 203) ,rgb(163, 205, 232));
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    section {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 0;
+    }
+    header {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: rgb(167, 154, 230);
+      font-size: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .navigation a {
+      color: rgb(44, 43, 42);
+      background: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+    .navigation a:not(:last-child) {
+      margin-right: 20px;
+    }
+    .hero {
+      color: #fff;
+      padding: 100px 0;
+    }
+    .cta-button {
+      background-color: rgb(167, 154, 230);
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: rgb(146, 131, 197);
+    }
+    .features {
+      background-color: #fff;
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .feature-item {
+      max-width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+    .feature-item h3 {
+      margin-bottom: 15px;
+    }
+    .testimonials {
+      background-color: rgb(167, 154, 230);
+      color: #fff;
+      padding: 50px 0;
+    }
+    .testimonial {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: left;
+    }
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .testimonial span {
+      font-weight: bold;
+    }
+    .contact-form {
+      background-color: #fff;
+      padding: 50px 20px;
+    }
+    .contact-form form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(167, 154, 230);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: rgb(146, 131, 197);
+    }
+    .footer {
+      background-color: #a8d8fa;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .media-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .media-icons a {
+      position: relative;
+      font-size: 25px;
+      color: #fff;
+    }
+    .media-icons a:not(:last-child) {
+      margin-right: 50px;
+    }
+    .media-icons a:hover {
+      transform: scale(1.2, 1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2><a href="#" class="logo">Yash</a></h2>
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Info</a>
+      <a href="#">Service</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+  <section class="hero">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </section>
+  <section class="features">
+    <div class="feature-item">
+      <i class="fas fa-bolt fa-3x" style="color:rgb(167, 154, 230);"></i>
+      <h3>Fast Performance</h3>
+      <p>Experience lightning fast speeds with our top-notch infrastructure.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-shield-alt fa-3x" style="color:rgb(167, 154, 230);"></i>
+      <h3>Secure</h3>
+      <p>We prioritize your security with advanced encryption and protection.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-heart fa-3x" style="color:rgb(167, 154, 230);"></i>
+      <h3>User Friendly</h3>
+      <p>Our platform is designed to be intuitive and easy to use.</p>
+    </div>
+  </section>
+  <section class="testimonials">
+    <div class="testimonial">
+      <p>"This service is amazing! It has changed the way I work."</p>
+    </div>
+    <div class="testimonial">
+      <p>"Highly recommended. Excellent customer service and great value."</p>
+    </div>
+  </section>
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

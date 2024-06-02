@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url(bg.jpg) center/cover no-repeat fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navigation a {
+            color: rgb(44, 43, 42);
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 8px 15px;
+            background: #fff;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background: rgb(167, 154, 230);
+            color: #fff;
+        }
+
+        .profile-pic {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .info h1 {
+            font-size: 65px;
+            color: rgb(36, 32, 30);
+        }
+
+        .info h3 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin-bottom: 26px;
+        }
+
+        .info span {
+            color: rgb(242, 132, 15);
+        }
+
+        .info a {
+            text-decoration: none;
+            color: #fff;
+            background: rgb(36, 32, 30);
+            padding: 10px 18px;
+            border-radius: 10px;
+            transition: background 0.4s ease;
+        }
+
+        .info a:hover {
+            background: rgb(59, 174, 209);
+        }
+
+        .media-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .media-icons a {
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+
+        .media-icons a:hover {
+            color: rgb(59, 174, 209);
+        }
+        .footer{
+            display: flex;
+            justify-content:center;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+            .footer a:hover {
+            text-decoration: underline;
+    }    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-pic">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="navigation">
+            
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SKILLS</a>
+                <a href="#">MY WORKS</a>
+                <a href="#">CONTACT</a>
+        </div>
+    </header>
+    <section>
+        <div class="info">
+            <h3>Hi, I'm <span>Tirumalasetti Yaswanth</span></h3>
+            <h1><span>W</span>EB <span>D</span>ES<span>I</span>GNE<span>R</span></h1>
+            <a href="TIRUMALASETTI YASWANTH.pdf">My resume</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
